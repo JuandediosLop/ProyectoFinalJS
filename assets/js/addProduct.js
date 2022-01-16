@@ -21,7 +21,7 @@ const addProducts = ()=>{
                     <span class="actual-price">$240</span>
                 </div>
 
-        </div>
+            </div>
             `;
 
     }

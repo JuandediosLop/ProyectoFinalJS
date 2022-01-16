@@ -1,3 +1,33 @@
+const items = document.getElementById("product-container");
+const templateCard = document.getElementById("template-card").content;
+const fragment = document.createDocumentFragment();
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    fetchData();
+})
+
+const fetchData = async ()=>{
+    try {
+        const res = await fetch('productos.json');
+        const data = await res.json();
+        escribirCards(data);
+
+    } catch (error) {
+        console.log("error");
+    }
+}
+
+const escribirCards = data =>{
+    data.forEach(producto => {
+        templateCard.getElementByClass("product-brand").textContent = producto.nombre;
+
+        const clone = templateCard.cloneNode(true);
+        fragment.appendChild(clone);
+    });
+    items.appendChild(fragment);
+}
+
+/*
 const productos = [
 
     {
@@ -145,3 +175,4 @@ const productos = [
         "foto":"./assets/img/card12.png"
     }
 ];
+*/
