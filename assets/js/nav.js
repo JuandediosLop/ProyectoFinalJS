@@ -8,8 +8,25 @@ let createNav = () =>{
                 <input id="search" type="text" class="search-box" placeholder="Buscador de productos">
                 <button class="search-btn" id="search-btn">Buscar</button>
             </div>
-            <a href="#"><i class="fas fa-user"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a> 
+            <div>
+                <ul class="options">
+                    <li class="user">
+                       <a> <i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="submenu">
+                       <a> <i class="fas fa-shopping-cart"></i></a>
+                        <div id="carrito">
+                            <p class="vacio">Carrito de compras</p>
+                            <div class="lista-carrito" id="add-car-prodct">
+                                                   
+                            </div>
+                            <div class="buttons-car">
+                                <button class="vaciar-btn">vaciar</button>
+                                <button class="ir-carrito-btn">ir a carrito</button>
+                            </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <ul class="links-container">

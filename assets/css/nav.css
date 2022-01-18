@@ -78,6 +78,94 @@
     color: #000;
 }
 
+.options {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.options a{
+    cursor: pointer;
+}
+.submenu, .user {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 25px;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: -10%;
+    top: 110%;
+    z-index: 1;
+    background: #383838;
+    opacity: 0.9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.content-product-car{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.content-product-car div{
+    margin: 10px;
+}
+.price-product-car{
+    display: flex;
+    flex-direction: row;
+}
+.price-product-car p{
+    margin: 0 10px;
+
+}
+.precioNormal{
+    opacity: 0.5;
+    text-decoration: line-through;
+} 
+.product-info-car{
+    font-size: 17px;
+}
+
+.delete-product-car:hover i{
+    cursor: pointer;
+}
+.buttons-car{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.vaciar-btn, .ir-carrito-btn{
+    width: 50%;
+    height: 30px;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #383838;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 15px;
+    background: #f5f5f5;
+    margin-top: 1rem;
+    margin: 0 10px;
+}
+
+.lista-carrito{
+    font-size: 1.3rem;
+
+}
+
+
+
 .links-container{
     width: 100%;
     display: flex;

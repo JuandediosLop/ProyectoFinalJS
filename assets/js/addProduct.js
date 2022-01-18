@@ -10,8 +10,8 @@ const addProducts = ()=>{
                         50% off
                     </span>
                     <img src="${producto.foto}" class="product-thumb" alt="">
-                    <button class="card-btn">
-                        Más información
+                    <button class="card-btn add-btn" id="button-add">
+                        Añadir al carrito
                     </button>
                 </div>
                 <div class="product-info">
