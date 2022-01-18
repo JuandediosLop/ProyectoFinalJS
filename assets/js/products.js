@@ -7,7 +7,7 @@ const productos = [
         "nombre":"Vestido turquesa",
         "descripcionCorta": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "descripción": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "precio":30,
+        "precio":120,
         "stock":"si",
         "cantidad":25,
         "foto":"./assets/img/card1.png"
@@ -19,7 +19,7 @@ const productos = [
         "nombre":"Camiseta gris",
         "descripcionCorta": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "descripción": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "precio":100,
+        "precio":120,
         "stock":"si",
         "cantidad":15,
         "foto":"./assets/img/card2.png"
@@ -31,7 +31,7 @@ const productos = [
         "nombre":"Sueter hueso",
         "descripcionCorta": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "descripción": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "precio":250,
+        "precio":120,
         "stock":"si",
         "cantidad":15,
         "foto":"./assets/img/card3.png"

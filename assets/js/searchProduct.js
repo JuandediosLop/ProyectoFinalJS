@@ -9,9 +9,21 @@ const borrarContenidosHijos= (idBorrar)=>{
 }
 
 const filtrar = ()=>{
+
+   
     borrarContenidosHijos(obtenerProducID);
     
     const texto = obtenerDatos.value.toLowerCase();
+    
+    if(texto==''){
+        obtenerProducID.innerHTML +=`
+        <h2 class="product-category">
+                Campo vacio
+            </h2>
+        `
+        return;
+    }
+
     obtenerProducID.innerHTML=''
 
     for(let producto of productos){
