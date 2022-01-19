@@ -106,7 +106,12 @@
     opacity: 0.9;
     padding: 15px;
     border-radius: 10px;
-    width: 300px;
+    width: 360px;
+}
+
+.masCantidad #cantidad-producto{
+    width: 38px;
+    margin-top: 20px;
 }
 
 .content-product-car{

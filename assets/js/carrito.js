@@ -4,11 +4,10 @@ const shoppingCartItemsContainer =  document.getElementById('add-car-prodct');
 
 /*Clase carrito: para el carro de compras del sitio */
 class Carrito{
-    constructor(nombre, precio, image, cantidad){
+    constructor(nombre, precio, image){
         this.nombre = nombre;
         this.precio = precio;
         this.image= image;
-        this.cantidad = cantidad;
     }
 }
 
@@ -75,7 +74,7 @@ function addItemToShoppingCart(title, price, image){
             </div>
             <div class="price-product-car">
                 <p class="precioActual">${price}</p>
-                <p class="precioNormal">$400</p>
+                <p class="precioNormal">$240</p>
             </div>   
         </div>
         <div class="delete-product-car">
@@ -84,7 +83,6 @@ function addItemToShoppingCart(title, price, image){
     </div>  
     `;
     shoppingCartItemsContainer.innerHTML += shoppingCartContent;
-
 }
 
 /* funcion que inserta en el HTML del carrito el contenido cuando se recarga*/
