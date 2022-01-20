@@ -1,11 +1,6 @@
 let carritoCompras= new Array(); 
 const addToShoppingCartButtons= document.querySelectorAll('.add-btn');
 
-/*Iteramos con un forEach para obtener la cart que se clickeo*/
-addToShoppingCartButtons.forEach(addToCartButton=> {
-    addToCartButton.addEventListener('click', addtoCartClicked)
-});
-
 const shoppingCartItemsContainer =  document.getElementById('add-car-prodct');
 
 /*Clase carrito: para el carro de compras del sitio */
@@ -43,6 +38,12 @@ function recuperarArrayStorageParaCarrito(){
 }
 
 recuperarArrayStorageParaCarrito(); 
+
+/*Iteramos con un forEach para obtener la cart que se clickeo*/
+addToShoppingCartButtons.forEach(addToCartButton=> {
+    addToCartButton.addEventListener('click', addtoCartClicked)
+});
+
 
 
 /*Funcion que añade la carta al carrito obteniendo nombre, precio y la imagen*/
