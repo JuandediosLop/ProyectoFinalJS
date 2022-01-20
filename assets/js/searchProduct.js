@@ -6,11 +6,10 @@ const obtenerDatos= document.getElementById("search");
 const borrarContenidosHijos= (idBorrar)=>{
     while (idBorrar.firstChild) {
         idBorrar.removeChild(idBorrar.lastChild);
-      }
+    }
 }
 
 const filtrar = ()=>{
-   
     borrarContenidosHijos(obtenerProducID);
     escribirResultadoBusqueda("nombre");
     noEncontrado();
@@ -25,7 +24,7 @@ const escribirResultadoBusqueda = (tipoBusqueda) => {
     if(texto==''){
         obtenerProducID.innerHTML +=`
         <h2 class="product-category">
-                Campo vacio
+        Campo vacio
         </h2>
         `
         return;
@@ -53,7 +52,7 @@ const escribirResultadoBusqueda = (tipoBusqueda) => {
                         <span class="actual-price">$240</span>
                     </div>
 
-            </div>
+                </div>
                 `;
             }
         }
